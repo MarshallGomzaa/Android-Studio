@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- <TextView
+         android:id="@+id/txt_first"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="This is America"
+         android:textSize="20sp"
+         />
+
+     <TextView
+         android:id="@+id/txt_second"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="This is Nepal"
+         android:textSize="20sp"
+         android:layout_alignParentBottom="true"
+         /> -->
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Register Account"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="Fisrt Name"
+        android:background="@drawable/edit_background"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/fName"
+        android:background="@drawable/edit_background"
+        android:hint="Last Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lName"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:background="@drawable/edit_background"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Email"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:background="@drawable/edit_background"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/cPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Confirm Password"
+        android:background="@drawable/edit_background"
+        android:inputType="textPassword"
+        android:layout_below="@id/Password"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignUp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cPassword"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

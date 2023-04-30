@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/lytToolbar"
+            layout="@layout/layout_toolbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Sign Up"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/edtFn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_background"
+            android:hint="First Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:id="@+id/edtLn"
+            android:background="@drawable/edit_background"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_background"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_background"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            />
+        <EditText
+            android:id="@+id/edtCpass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_background"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="25dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/login_button"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
